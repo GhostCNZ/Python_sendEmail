@@ -1,6 +1,3 @@
-# Python_sendEmail
-使用Python内置的smtplib包和email包来实现邮件的构造和发送。
-
 '''
 
 1.需要导入Python3标准库中的smtplib包和email包来实现邮件的构造和发送。
@@ -14,10 +11,6 @@ from email.mime.multipart import MIMEMultipart
 # 处理图片需要 MIMEImage 类
 from email.mime.image import MIMEImage
 
-
-
-
-
 '''
 
 2.配置邮件发送及接收人
@@ -26,10 +19,6 @@ from email.mime.image import MIMEImage
 fromaddr = '1oo88@sina.cn'  # 邮件发送方邮箱地址
 password = '******'  # 密码(部分邮箱为授权码)
 toaddrs = ['1oo88@sina.cn', '1951995428@qq.com']  # 邮件接受方邮箱地址，注意需要[]包裹，这意味着可以写多个邮件地址群发
-
-
-
-
 
 '''
 
@@ -44,10 +33,6 @@ message['Subject'] = '测试'
 message['From'] = fromaddr
 # 接受方信息
 message['To'] = toaddrs[0]
-
-
-
-
 
 '''
 
