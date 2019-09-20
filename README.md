@@ -72,7 +72,7 @@ message['To'] = toaddrs[0]
 
 ```python
 try:
-    server = smtplib.SMTP('smtp.sina.cn')  # 163邮箱服务器地址，端口默认为25
+    server = smtplib.SMTP('smtp.sina.cn')  # sina邮箱服务器地址，端口默认为25
     server.login(fromaddr, password)
     server.sendmail(fromaddr, toaddrs, message.as_string())
     print('success')
